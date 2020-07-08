@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0a6e5335fd7faf4afaceb14ea54b35c",
+    "content-hash": "baf78a7eba9a5b7ef7663a6fcba66da1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -830,6 +830,62 @@
                 }
             ],
             "description": "Geocoder GoogleMaps adapter",
+            "homepage": "http://geocoder-php.org/Geocoder/",
+            "time": "2020-07-04T13:18:10+00:00"
+        },
+        {
+            "name": "geocoder-php/yandex-provider",
+            "version": "4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/geocoder-php/yandex-provider.git",
+                "reference": "3a3c89fa4817949310cfe64fc1f4a237901d4ef1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/geocoder-php/yandex-provider/zipball/3a3c89fa4817949310cfe64fc1f4a237901d4ef1",
+                "reference": "3a3c89fa4817949310cfe64fc1f4a237901d4ef1",
+                "shasum": ""
+            },
+            "require": {
+                "geocoder-php/common-http": "^4.0",
+                "php": "^7.2",
+                "willdurand/geocoder": "^4.0"
+            },
+            "provide": {
+                "geocoder-php/provider-implementation": "1.0"
+            },
+            "require-dev": {
+                "geocoder-php/provider-integration-tests": "^1.0",
+                "php-http/curl-client": "^1.7",
+                "php-http/message": "^1.0",
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Geocoder\\Provider\\Yandex\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com"
+                }
+            ],
+            "description": "Geocoder Yandex adapter",
             "homepage": "http://geocoder-php.org/Geocoder/",
             "time": "2020-07-04T13:18:10+00:00"
         },
