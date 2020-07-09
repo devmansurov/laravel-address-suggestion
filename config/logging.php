@@ -35,6 +35,23 @@ return [
     */
 
     'channels' => [
+        'database' => [
+            'driver' => 'custom',
+            'via' => danielme85\LaravelLogToDB\LogToDbHandler::class,
+            'level' => env('APP_LOG_LEVEL', 'info'),
+            'name' => 'Query logging',
+            'connection' => 'default',
+            'collection' => 'log',
+            'detailed' => true,
+            'queue' => false,
+            'queue_name' => '',
+            'queue_connection' => '',
+            'max_records' => false,
+            'max_hours' => false,
+            'processors' => [
+                \App\Services\Logs\LogProcessor::class
+             ]
+        ],
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
